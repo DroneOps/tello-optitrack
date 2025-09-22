@@ -1,0 +1,61 @@
+--2025-08-20 12:59:33--  https://s3.amazonaws.com/naturalpoint/software/NatNetSDKLinux/ubuntu/NatNet_SDK_4.0_ubuntu.tar
+Resolving s3.amazonaws.com (s3.amazonaws.com)... 52.217.224.104, 16.182.75.16, 54.231.228.0, ...
+Connecting to s3.amazonaws.com (s3.amazonaws.com)|52.217.224.104|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1935360 (1.8M) [application/x-tar]
+Saving to: ‘NatNetSDK.tar’
+
+     0K .......... .......... .......... .......... ..........  2%  832K 2s
+    50K .......... .......... .......... .......... ..........  5%  800K 2s
+   100K .......... .......... .......... .......... ..........  7%  823K 2s
+   150K .......... .......... .......... .......... .......... 10% 24.7M 2s
+   200K .......... .......... .......... .......... .......... 13%  842K 2s
+   250K .......... .......... .......... .......... .......... 15% 23.7M 1s
+   300K .......... .......... .......... .......... .......... 18% 37.1M 1s
+   350K .......... .......... .......... .......... .......... 21%  844K 1s
+   400K .......... .......... .......... .......... .......... 23%  101M 1s
+   450K .......... .......... .......... .......... .......... 26% 34.5M 1s
+   500K .......... .......... .......... .......... .......... 29%  847K 1s
+   550K .......... .......... .......... .......... .......... 31%  114M 1s
+   600K .......... .......... .......... .......... .......... 34%  857K 1s
+   650K .......... .......... .......... .......... .......... 37% 21.3M 1s
+   700K .......... .......... .......... .......... .......... 39% 26.7M 1s
+   750K .......... .......... .......... .......... .......... 42%  875K 1s
+   800K .......... .......... .......... .......... .......... 44% 20.6M 1s
+   850K .......... .......... .......... .......... .......... 47% 25.5M 1s
+   900K .......... .......... .......... .......... .......... 50%  844K 1s
+   950K .......... .......... .......... .......... .......... 52% 30.2M 0s
+  1000K .......... .......... .......... .......... .......... 55% 25.1M 0s
+  1050K .......... .......... .......... .......... .......... 58%  102M 0s
+  1100K .......... .......... .......... .......... .......... 60%  842K 0s
+  1150K .......... .......... .......... .......... .......... 63% 93.5M 0s
+  1200K .......... .......... .......... .......... .......... 66% 29.4M 0s
+  1250K .......... .......... .......... .......... .......... 68%  840K 0s
+  1300K .......... .......... .......... .......... .......... 71% 22.3M 0s
+  1350K .......... .......... .......... .......... .......... 74% 26.2M 0s
+  1400K .......... .......... .......... .......... .......... 76% 26.3M 0s
+  1450K .......... .......... .......... .......... .......... 79%  863K 0s
+  1500K .......... .......... .......... .......... .......... 82% 23.8M 0s
+  1550K .......... .......... .......... .......... .......... 84% 27.5M 0s
+  1600K .......... .......... .......... .......... .......... 87% 29.8M 0s
+  1650K .......... .......... .......... .......... .......... 89%  866K 0s
+  1700K .......... .......... .......... .......... .......... 92% 26.8M 0s
+  1750K .......... .......... .......... .......... .......... 95% 26.6M 0s
+  1800K .......... .......... .......... .......... .......... 97% 23.4M 0s
+  1850K .......... .......... .......... ..........           100%  693K=0.9s
+
+2025-08-20 12:59:34 (2.13 MB/s) - ‘NatNetSDK.tar’ saved [1935360/1935360]
+
+[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:80 (rosidl_target_interfaces)
+
+[0m
+[0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/natnet_ros2` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[01m[K/home/droneops/ros2_ws/src/natnet_ros2/src/natnet_ros2.cpp:[m[K In member function ‘[01m[Kvoid NatNetNode::get_node_params()[m[K’:
+[01m[K/home/droneops/ros2_ws/src/natnet_ros2/src/natnet_ros2.cpp:71:52:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kconst ParameterDescriptor[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::ParameterDescriptor_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+   71 |         [01;35m[Kdeclare_parameter<std::vector<std::string>>("object_names", {})[m[K;
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/droneops/ros2_ws/src/natnet_ros2/src/natnet_ros2.cpp:71:52:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit

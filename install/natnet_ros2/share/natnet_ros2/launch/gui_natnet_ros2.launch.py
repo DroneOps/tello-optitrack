@@ -1,0 +1,1 @@
+/home/droneops/ros2_ws/src/natnet_ros2/launch/gui_natnet_ros2.launch.py

@@ -1,0 +1,1 @@
+/home/droneops/ros2_ws/build/natnet_ros2/ament_cmake_environment_hooks/local_setup.bash

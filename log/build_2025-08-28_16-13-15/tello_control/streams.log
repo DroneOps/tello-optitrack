@@ -1,0 +1,24 @@
+[0.865s] Invoking command in '/home/droneops/ros2_ws/src/tello_control': PYTHONPATH=/home/droneops/ros2_ws/build/tello_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/droneops/ros2_ws/install/tello_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tello_control build --build-base /home/droneops/ros2_ws/build/tello_control/build install --record /home/droneops/ros2_ws/build/tello_control/install.log --single-version-externally-managed install_data
+[1.099s] running egg_info
+[1.100s] writing ../../build/tello_control/tello_control.egg-info/PKG-INFO
+[1.101s] writing dependency_links to ../../build/tello_control/tello_control.egg-info/dependency_links.txt
+[1.101s] writing entry points to ../../build/tello_control/tello_control.egg-info/entry_points.txt
+[1.101s] writing requirements to ../../build/tello_control/tello_control.egg-info/requires.txt
+[1.101s] writing top-level names to ../../build/tello_control/tello_control.egg-info/top_level.txt
+[1.103s] reading manifest file '../../build/tello_control/tello_control.egg-info/SOURCES.txt'
+[1.120s] writing manifest file '../../build/tello_control/tello_control.egg-info/SOURCES.txt'
+[1.120s] running build
+[1.120s] running build_py
+[1.120s] copying tello_control/cinematic_control.py -> /home/droneops/ros2_ws/build/tello_control/build/lib/tello_control
+[1.121s] running install
+[1.121s] running install_lib
+[1.122s] copying /home/droneops/ros2_ws/build/tello_control/build/lib/tello_control/cinematic_control.py -> /home/droneops/ros2_ws/install/tello_control/lib/python3.10/site-packages/tello_control
+[1.123s] byte-compiling /home/droneops/ros2_ws/install/tello_control/lib/python3.10/site-packages/tello_control/cinematic_control.py to cinematic_control.cpython-310.pyc
+[1.124s] running install_data
+[1.124s] running install_egg_info
+[1.127s] removing '/home/droneops/ros2_ws/install/tello_control/lib/python3.10/site-packages/tello_control-0.0.0-py3.10.egg-info' (and everything under it)
+[1.130s] Copying ../../build/tello_control/tello_control.egg-info to /home/droneops/ros2_ws/install/tello_control/lib/python3.10/site-packages/tello_control-0.0.0-py3.10.egg-info
+[1.130s] running install_scripts
+[1.151s] Installing cinematic_control script to /home/droneops/ros2_ws/install/tello_control/lib/tello_control
+[1.151s] writing list of installed files to '/home/droneops/ros2_ws/build/tello_control/install.log'
+[1.187s] Invoked command in '/home/droneops/ros2_ws/src/tello_control' returned '0': PYTHONPATH=/home/droneops/ros2_ws/build/tello_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/droneops/ros2_ws/install/tello_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tello_control build --build-base /home/droneops/ros2_ws/build/tello_control/build install --record /home/droneops/ros2_ws/build/tello_control/install.log --single-version-externally-managed install_data

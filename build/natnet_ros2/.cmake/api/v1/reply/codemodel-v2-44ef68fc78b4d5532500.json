@@ -1,0 +1,269 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-009134043d716942c901.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					]
+				},
+				{
+					"build" : "natnet_ros2__py",
+					"jsonFile" : "directory-natnet_ros2__py-668c05d698a104ef5bfe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/droneops/ros2_ws/build/natnet_ros2/natnet_ros2__py",
+					"targetIndexes" : 
+					[
+						7
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "natnet_ros2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_natnet_ros2_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_natnet_ros2_egg-f631351c867992de48f7.json",
+					"name" : "ament_cmake_python_build_natnet_ros2_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_natnet_ros2_py_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_natnet_ros2_py_egg-f4526d8945eae208c387.json",
+					"name" : "ament_cmake_python_build_natnet_ros2_py_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_natnet_ros2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_natnet_ros2-9d130af9af9828a491ca.json",
+					"name" : "ament_cmake_python_symlink_natnet_ros2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_natnet_ros2_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_natnet_ros2_py-4183e20117a7a53f5d7b.json",
+					"name" : "ament_cmake_python_symlink_natnet_ros2_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "marker_poses_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-marker_poses_server-0e83b500b801e2c069d5.json",
+					"name" : "marker_poses_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2-f55eb3050511de7a41ea.json",
+					"name" : "natnet_ros2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2__cpp-d94f4d3576bb69463815.json",
+					"name" : "natnet_ros2__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "natnet_ros2__py::@024d041bc039e99f861a",
+					"jsonFile" : "target-natnet_ros2__py-579f57054819c8f248fe.json",
+					"name" : "natnet_ros2__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2__rosidl_generator_c-626e9f6e1743ff979049.json",
+					"name" : "natnet_ros2__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2__rosidl_generator_py-78839e9edcdbf638eba3.json",
+					"name" : "natnet_ros2__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2__rosidl_typesupport_c-5b555ead6a385fefd91e.json",
+					"name" : "natnet_ros2__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2__rosidl_typesupport_c__pyext-95c7158c7828ba885ca1.json",
+					"name" : "natnet_ros2__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2__rosidl_typesupport_cpp-214616c7e100e5fb80a7.json",
+					"name" : "natnet_ros2__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2__rosidl_typesupport_fastrtps_c-836069e60689db7a2397.json",
+					"name" : "natnet_ros2__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2__rosidl_typesupport_fastrtps_c__pyext-e3660ec046b9e64c9fca.json",
+					"name" : "natnet_ros2__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2__rosidl_typesupport_fastrtps_cpp-3b52995cbe361efb5daf.json",
+					"name" : "natnet_ros2__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2__rosidl_typesupport_introspection_c-a2ef985286c128b66bfb.json",
+					"name" : "natnet_ros2__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2__rosidl_typesupport_introspection_c__pyext-a19a1dbb4be5b346f622.json",
+					"name" : "natnet_ros2__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2__rosidl_typesupport_introspection_cpp-7756b0fbbdebc5164765.json",
+					"name" : "natnet_ros2__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2_node-89e28e6022c9cb76428c.json",
+					"name" : "natnet_ros2_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "natnet_ros2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-natnet_ros2_uninstall-95714c9913090252a20a.json",
+					"name" : "natnet_ros2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-5ba6d6698949a50c37e1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/droneops/ros2_ws/build/natnet_ros2",
+		"source" : "/home/droneops/ros2_ws/src/natnet_ros2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,487 @@
+[0.000000] (-) TimerEvent: {}
+[0.000642] (natnet_ros2) JobQueued: {'identifier': 'natnet_ros2', 'dependencies': OrderedDict()}
+[0.000747] (natnet_ros2) JobStarted: {'identifier': 'natnet_ros2'}
+[0.034919] (natnet_ros2) JobProgress: {'identifier': 'natnet_ros2', 'progress': 'cmake'}
+[0.035404] (natnet_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/droneops/ros2_ws/src/natnet_ros2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/droneops/ros2_ws/install/natnet_ros2'], 'cwd': '/home/droneops/ros2_ws/build/natnet_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'droneops'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/droneops'), ('OLDPWD', '/home/droneops/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1867'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/droneops/droneops/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'droneops'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'droneops'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/droneops/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/droneops-WorkStation:@/tmp/.ICE-unix/1688,unix/droneops-WorkStation:/tmp/.ICE-unix/1688'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4059d937_1854_492b_8d55_9b2bee7293b9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.49BNB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/droneops/droneops/install/bridge_optitrack:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/droneops/ros2_ws/build/natnet_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/droneops/droneops/install/bridge_optitrack/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/droneops/droneops/install/bridge_optitrack:/opt/ros/humble')]), 'shell': False}
+[0.099640] (-) TimerEvent: {}
+[0.200139] (-) TimerEvent: {}
+[0.302408] (-) TimerEvent: {}
+[0.403060] (-) TimerEvent: {}
+[0.503678] (-) TimerEvent: {}
+[0.604279] (-) TimerEvent: {}
+[0.704914] (-) TimerEvent: {}
+[0.805553] (-) TimerEvent: {}
+[0.906172] (-) TimerEvent: {}
+[0.906728] (natnet_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.006391] (-) TimerEvent: {}
+[1.107003] (-) TimerEvent: {}
+[1.207653] (-) TimerEvent: {}
+[1.308256] (-) TimerEvent: {}
+[1.332287] (natnet_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.372456] (natnet_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.408405] (-) TimerEvent: {}
+[1.508947] (-) TimerEvent: {}
+[1.566919] (natnet_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.583628] (natnet_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.584184] (natnet_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.593678] (natnet_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.597680] (natnet_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.609057] (-) TimerEvent: {}
+[1.709494] (-) TimerEvent: {}
+[1.715737] (natnet_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.721698] (natnet_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.721943] (natnet_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.722262] (natnet_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.784156] (natnet_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.809680] (-) TimerEvent: {}
+[1.910148] (-) TimerEvent: {}
+[2.006365] (natnet_ros2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.010189] (-) TimerEvent: {}
+[2.099224] (natnet_ros2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.110336] (-) TimerEvent: {}
+[2.178036] (natnet_ros2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.210522] (-) TimerEvent: {}
+[2.287286] (natnet_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.302319] (natnet_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.309740] (natnet_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.310618] (-) TimerEvent: {}
+[2.326153] (natnet_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.354923] (natnet_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.410808] (-) TimerEvent: {}
+[2.415244] (natnet_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.428600] (natnet_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.511005] (-) TimerEvent: {}
+[2.611456] (-) TimerEvent: {}
+[2.669852] (natnet_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.711681] (-) TimerEvent: {}
+[2.722203] (natnet_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.760360] (natnet_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.811898] (-) TimerEvent: {}
+[2.819483] (natnet_ros2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.912174] (-) TimerEvent: {}
+[3.012709] (-) TimerEvent: {}
+[3.033350] (natnet_ros2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.034452] (natnet_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.112846] (-) TimerEvent: {}
+[3.174758] (natnet_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.177469] (natnet_ros2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.213013] (-) TimerEvent: {}
+[3.313519] (-) TimerEvent: {}
+[3.314935] (natnet_ros2) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.14 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[3.380718] (natnet_ros2) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[3.413721] (-) TimerEvent: {}
+[3.468060] (natnet_ros2) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[3.513925] (-) TimerEvent: {}
+[3.614452] (-) TimerEvent: {}
+[3.670880] (natnet_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[3.714665] (-) TimerEvent: {}
+[3.725738] (natnet_ros2) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[3.769008] (natnet_ros2) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[3.772346] (natnet_ros2) StdoutLine: {'line': b'-- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[3.814834] (-) TimerEvent: {}
+[3.915253] (-) TimerEvent: {}
+[4.015750] (-) TimerEvent: {}
+[4.116162] (-) TimerEvent: {}
+[4.177256] (natnet_ros2) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[4.216336] (-) TimerEvent: {}
+[4.316846] (-) TimerEvent: {}
+[4.417343] (-) TimerEvent: {}
+[4.517833] (-) TimerEvent: {}
+[4.618297] (-) TimerEvent: {}
+[4.678684] (natnet_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.718481] (-) TimerEvent: {}
+[4.818965] (-) TimerEvent: {}
+[4.904281] (natnet_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.919161] (-) TimerEvent: {}
+[4.937765] (natnet_ros2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.946810] (natnet_ros2) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[5.019383] (-) TimerEvent: {}
+[5.028888] (natnet_ros2) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[5.029283] (natnet_ros2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.029438] (natnet_ros2) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[5.029573] (natnet_ros2) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[5.067188] (natnet_ros2) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[5.119607] (-) TimerEvent: {}
+[5.196410] (natnet_ros2) StderrLine: {'line': b'--2025-08-20 12:59:33--  https://s3.amazonaws.com/naturalpoint/software/NatNetSDKLinux/ubuntu/NatNet_SDK_4.0_ubuntu.tar\n'}
+[5.219819] (-) TimerEvent: {}
+[5.230868] (natnet_ros2) StderrLine: {'line': b'Resolving s3.amazonaws.com (s3.amazonaws.com)... 52.217.224.104, 16.182.75.16, 54.231.228.0, ...\n'}
+[5.288380] (natnet_ros2) StderrLine: {'line': b'Connecting to s3.amazonaws.com (s3.amazonaws.com)|52.217.224.104|:443... connected.\n'}
+[5.320020] (-) TimerEvent: {}
+[5.420555] (-) TimerEvent: {}
+[5.521144] (-) TimerEvent: {}
+[5.546107] (natnet_ros2) StderrLine: {'line': b'HTTP request sent, awaiting response... 200 OK\n'}
+[5.546516] (natnet_ros2) StderrLine: {'line': b'Length: 1935360 (1.8M) [application/x-tar]\n'}
+[5.546717] (natnet_ros2) StderrLine: {'line': b'Saving to: \xe2\x80\x98NatNetSDK.tar\xe2\x80\x99\n'}
+[5.547777] (natnet_ros2) StderrLine: {'line': b'\n'}
+[5.621372] (-) TimerEvent: {}
+[5.667485] (natnet_ros2) StderrLine: {'line': b'     0K .......... .......... .......... .......... ..........  2%  832K 2s\n'}
+[5.668737] (natnet_ros2) StderrLine: {'line': b'    50K .......... .......... .......... .......... ..........  5%  800K 2s\n'}
+[5.721576] (-) TimerEvent: {}
+[5.729468] (natnet_ros2) StderrLine: {'line': b'   100K .......... .......... .......... .......... ..........  7%  823K 2s\n'}
+[5.731423] (natnet_ros2) StderrLine: {'line': b'   150K .......... .......... .......... .......... .......... 10% 24.7M 2s\n'}
+[5.790866] (natnet_ros2) StderrLine: {'line': b'   200K .......... .......... .......... .......... .......... 13%  842K 2s\n'}
+[5.792876] (natnet_ros2) StderrLine: {'line': b'   250K .......... .......... .......... .......... .......... 15% 23.7M 1s\n'}
+[5.794160] (natnet_ros2) StderrLine: {'line': b'   300K .......... .......... .......... .......... .......... 18% 37.1M 1s\n'}
+[5.821783] (-) TimerEvent: {}
+[5.853541] (natnet_ros2) StderrLine: {'line': b'   350K .......... .......... .......... .......... .......... 21%  844K 1s\n'}
+[5.854006] (natnet_ros2) StderrLine: {'line': b'   400K .......... .......... .......... .......... .......... 23%  101M 1s\n'}
+[5.855309] (natnet_ros2) StderrLine: {'line': b'   450K .......... .......... .......... .......... .......... 26% 34.5M 1s\n'}
+[5.914419] (natnet_ros2) StderrLine: {'line': b'   500K .......... .......... .......... .......... .......... 29%  847K 1s\n'}
+[5.914843] (natnet_ros2) StderrLine: {'line': b'   550K .......... .......... .......... .......... .......... 31%  114M 1s\n'}
+[5.921972] (-) TimerEvent: {}
+[5.973124] (natnet_ros2) StderrLine: {'line': b'   600K .......... .......... .......... .......... .......... 34%  857K 1s\n'}
+[5.975353] (natnet_ros2) StderrLine: {'line': b'   650K .......... .......... .......... .......... .......... 37% 21.3M 1s\n'}
+[5.977130] (natnet_ros2) StderrLine: {'line': b'   700K .......... .......... .......... .......... .......... 39% 26.7M 1s\n'}
+[6.022197] (-) TimerEvent: {}
+[6.034476] (natnet_ros2) StderrLine: {'line': b'   750K .......... .......... .......... .......... .......... 42%  875K 1s\n'}
+[6.036758] (natnet_ros2) StderrLine: {'line': b'   800K .......... .......... .......... .......... .......... 44% 20.6M 1s\n'}
+[6.038676] (natnet_ros2) StderrLine: {'line': b'   850K .......... .......... .......... .......... .......... 47% 25.5M 1s\n'}
+[6.098035] (natnet_ros2) StderrLine: {'line': b'   900K .......... .......... .......... .......... .......... 50%  844K 1s\n'}
+[6.099488] (natnet_ros2) StderrLine: {'line': b'   950K .......... .......... .......... .......... .......... 52% 30.2M 0s\n'}
+[6.101440] (natnet_ros2) StderrLine: {'line': b'  1000K .......... .......... .......... .......... .......... 55% 25.1M 0s\n'}
+[6.101881] (natnet_ros2) StderrLine: {'line': b'  1050K .......... .......... .......... .......... .......... 58%  102M 0s\n'}
+[6.122388] (-) TimerEvent: {}
+[6.161446] (natnet_ros2) StderrLine: {'line': b'  1100K .......... .......... .......... .......... .......... 60%  842K 0s\n'}
+[6.161948] (natnet_ros2) StderrLine: {'line': b'  1150K .......... .......... .......... .......... .......... 63% 93.5M 0s\n'}
+[6.163473] (natnet_ros2) StderrLine: {'line': b'  1200K .......... .......... .......... .......... .......... 66% 29.4M 0s\n'}
+[6.222608] (-) TimerEvent: {}
+[6.223076] (natnet_ros2) StderrLine: {'line': b'  1250K .......... .......... .......... .......... .......... 68%  840K 0s\n'}
+[6.225164] (natnet_ros2) StderrLine: {'line': b'  1300K .......... .......... .......... .......... .......... 71% 22.3M 0s\n'}
+[6.227027] (natnet_ros2) StderrLine: {'line': b'  1350K .......... .......... .......... .......... .......... 74% 26.2M 0s\n'}
+[6.228928] (natnet_ros2) StderrLine: {'line': b'  1400K .......... .......... .......... .......... .......... 76% 26.3M 0s\n'}
+[6.286860] (natnet_ros2) StderrLine: {'line': b'  1450K .......... .......... .......... .......... .......... 79%  863K 0s\n'}
+[6.288882] (natnet_ros2) StderrLine: {'line': b'  1500K .......... .......... .......... .......... .......... 82% 23.8M 0s\n'}
+[6.290647] (natnet_ros2) StderrLine: {'line': b'  1550K .......... .......... .......... .......... .......... 84% 27.5M 0s\n'}
+[6.292317] (natnet_ros2) StderrLine: {'line': b'  1600K .......... .......... .......... .......... .......... 87% 29.8M 0s\n'}
+[6.322771] (-) TimerEvent: {}
+[6.350082] (natnet_ros2) StderrLine: {'line': b'  1650K .......... .......... .......... .......... .......... 89%  866K 0s\n'}
+[6.351876] (natnet_ros2) StderrLine: {'line': b'  1700K .......... .......... .......... .......... .......... 92% 26.8M 0s\n'}
+[6.353688] (natnet_ros2) StderrLine: {'line': b'  1750K .......... .......... .......... .......... .......... 95% 26.6M 0s\n'}
+[6.355797] (natnet_ros2) StderrLine: {'line': b'  1800K .......... .......... .......... .......... .......... 97% 23.4M 0s\n'}
+[6.413516] (natnet_ros2) StderrLine: {'line': b'  1850K .......... .......... .......... ..........           100%  693K=0.9s\n'}
+[6.413926] (natnet_ros2) StderrLine: {'line': b'\n'}
+[6.414078] (natnet_ros2) StderrLine: {'line': b'2025-08-20 12:59:34 (2.13 MB/s) - \xe2\x80\x98NatNetSDK.tar\xe2\x80\x99 saved [1935360/1935360]\n'}
+[6.414216] (natnet_ros2) StderrLine: {'line': b'\n'}
+[6.422960] (-) TimerEvent: {}
+[6.442628] (natnet_ros2) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):\n'}
+[6.442997] (natnet_ros2) StderrLine: {'line': b'  Use rosidl_get_typesupport_target() and target_link_libraries() instead of\n'}
+[6.443158] (natnet_ros2) StderrLine: {'line': b'  rosidl_target_interfaces()\n'}
+[6.443295] (natnet_ros2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[6.443425] (natnet_ros2) StderrLine: {'line': b'  CMakeLists.txt:80 (rosidl_target_interfaces)\n'}
+[6.443554] (natnet_ros2) StderrLine: {'line': b'\n'}
+[6.443719] (natnet_ros2) StderrLine: {'line': b'\x1b[0m\n'}
+[6.452609] (natnet_ros2) StdoutLine: {'line': b'-- Found ament_cmake_copyright: 0.12.14 (/opt/ros/humble/share/ament_cmake_copyright/cmake)\n'}
+[6.454365] (natnet_ros2) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.14 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[6.464656] (natnet_ros2) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.14 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[6.470625] (natnet_ros2) StdoutLine: {'line': b'-- Found ament_cmake_lint_cmake: 0.12.14 (/opt/ros/humble/share/ament_cmake_lint_cmake/cmake)\n'}
+[6.481238] (natnet_ros2) StdoutLine: {'line': b'-- Found ament_cmake_xmllint: 0.12.14 (/opt/ros/humble/share/ament_cmake_xmllint/cmake)\n'}
+[6.482757] (natnet_ros2) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.14 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[6.484913] (natnet_ros2) StderrLine: {'line': b'\x1b[0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/natnet_ros2` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.\x1b[0m\n'}
+[6.523090] (-) TimerEvent: {}
+[6.531432] (natnet_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.588362] (natnet_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[6.601879] (natnet_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/droneops/ros2_ws/build/natnet_ros2\n'}
+[6.617768] (natnet_ros2) CommandEnded: {'returncode': 0}
+[6.619180] (natnet_ros2) JobProgress: {'identifier': 'natnet_ros2', 'progress': 'build'}
+[6.620994] (natnet_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/droneops/ros2_ws/build/natnet_ros2', '--', '-j8', '-l8'], 'cwd': '/home/droneops/ros2_ws/build/natnet_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'droneops'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/droneops'), ('OLDPWD', '/home/droneops/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1867'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/droneops/droneops/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'droneops'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'droneops'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/droneops/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/droneops-WorkStation:@/tmp/.ICE-unix/1688,unix/droneops-WorkStation:/tmp/.ICE-unix/1688'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4059d937_1854_492b_8d55_9b2bee7293b9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.49BNB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/droneops/droneops/install/bridge_optitrack:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/droneops/ros2_ws/build/natnet_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/droneops/droneops/install/bridge_optitrack/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/droneops/droneops/install/bridge_optitrack:/opt/ros/humble')]), 'shell': False}
+[6.623483] (-) TimerEvent: {}
+[6.688485] (natnet_ros2) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.702931] (natnet_ros2) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.704832] (natnet_ros2) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/natnet_ros2_node.dir/src/nn_filter.cpp.o\x1b[0m\n'}
+[6.707528] (natnet_ros2) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_symlink_natnet_ros2\n'}
+[6.708524] (natnet_ros2) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/natnet_ros2_node.dir/src/natnet_ros2.cpp.o\x1b[0m\n'}
+[6.713118] (natnet_ros2) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_symlink_natnet_ros2_py\n'}
+[6.723589] (-) TimerEvent: {}
+[6.823849] (-) TimerEvent: {}
+[6.924117] (-) TimerEvent: {}
+[6.933576] (natnet_ros2) StdoutLine: {'line': b'running egg_info\n'}
+[6.933831] (natnet_ros2) StdoutLine: {'line': b'running egg_info\n'}
+[6.934468] (natnet_ros2) StdoutLine: {'line': b'creating natnet_ros2.egg-info\n'}
+[6.934728] (natnet_ros2) StdoutLine: {'line': b'creating natnet_ros2_py.egg-info\n'}
+[6.934916] (natnet_ros2) StdoutLine: {'line': b'writing natnet_ros2.egg-info/PKG-INFO\n'}
+[6.935115] (natnet_ros2) StdoutLine: {'line': b'writing natnet_ros2_py.egg-info/PKG-INFO\n'}
+[6.935259] (natnet_ros2) StdoutLine: {'line': b'writing dependency_links to natnet_ros2.egg-info/dependency_links.txt\n'}
+[6.935440] (natnet_ros2) StdoutLine: {'line': b'writing top-level names to natnet_ros2.egg-info/top_level.txt\n'}
+[6.935598] (natnet_ros2) StdoutLine: {'line': b'writing dependency_links to natnet_ros2_py.egg-info/dependency_links.txt\n'}
+[6.935805] (natnet_ros2) StdoutLine: {'line': b"writing manifest file 'natnet_ros2.egg-info/SOURCES.txt'\n"}
+[6.935942] (natnet_ros2) StdoutLine: {'line': b'writing top-level names to natnet_ros2_py.egg-info/top_level.txt\n'}
+[6.936232] (natnet_ros2) StdoutLine: {'line': b"writing manifest file 'natnet_ros2_py.egg-info/SOURCES.txt'\n"}
+[6.950285] (natnet_ros2) StdoutLine: {'line': b"reading manifest file 'natnet_ros2.egg-info/SOURCES.txt'\n"}
+[6.951475] (natnet_ros2) StdoutLine: {'line': b"writing manifest file 'natnet_ros2.egg-info/SOURCES.txt'\n"}
+[6.952101] (natnet_ros2) StdoutLine: {'line': b"reading manifest file 'natnet_ros2_py.egg-info/SOURCES.txt'\n"}
+[6.953502] (natnet_ros2) StdoutLine: {'line': b"writing manifest file 'natnet_ros2_py.egg-info/SOURCES.txt'\n"}
+[6.972123] (natnet_ros2) StdoutLine: {'line': b'[ 11%] Built target natnet_ros2__cpp\n'}
+[6.983187] (natnet_ros2) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.983484] (natnet_ros2) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.985332] (natnet_ros2) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.992318] (natnet_ros2) StdoutLine: {'line': b'[ 19%] Built target ament_cmake_python_build_natnet_ros2_egg\n'}
+[6.998835] (natnet_ros2) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/natnet_ros2__rosidl_generator_c.dir/rosidl_generator_c/natnet_ros2/srv/detail/marker_poses__functions.c.o\x1b[0m\n'}
+[7.000865] (natnet_ros2) StdoutLine: {'line': b'[ 22%] Built target ament_cmake_python_build_natnet_ros2_py_egg\n'}
+[7.024231] (-) TimerEvent: {}
+[7.124507] (-) TimerEvent: {}
+[7.203981] (natnet_ros2) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/natnet_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/natnet_ros2/srv/detail/marker_poses__type_support.cpp.o\x1b[0m\n'}
+[7.215933] (natnet_ros2) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/natnet_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/natnet_ros2/srv/detail/dds_fastrtps/marker_poses__type_support.cpp.o\x1b[0m\n'}
+[7.221110] (natnet_ros2) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/natnet_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/natnet_ros2/srv/marker_poses__type_support.cpp.o\x1b[0m\n'}
+[7.224607] (-) TimerEvent: {}
+[7.263870] (natnet_ros2) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking C shared library libnatnet_ros2__rosidl_generator_c.so\x1b[0m\n'}
+[7.324730] (-) TimerEvent: {}
+[7.337163] (natnet_ros2) StdoutLine: {'line': b'[ 33%] Built target natnet_ros2__rosidl_generator_c\n'}
+[7.344307] (natnet_ros2) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.344507] (natnet_ros2) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.344928] (natnet_ros2) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.424820] (-) TimerEvent: {}
+[7.525097] (-) TimerEvent: {}
+[7.587766] (natnet_ros2) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/natnet_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/natnet_ros2/srv/marker_poses__type_support.cpp.o\x1b[0m\n'}
+[7.597857] (natnet_ros2) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/natnet_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/natnet_ros2/srv/detail/marker_poses__type_support_c.cpp.o\x1b[0m\n'}
+[7.625215] (-) TimerEvent: {}
+[7.689486] (natnet_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libnatnet_ros2__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.691072] (natnet_ros2) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX shared library libnatnet_ros2__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[7.719092] (natnet_ros2) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/natnet_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/natnet_ros2/srv/detail/marker_poses__type_support.c.o\x1b[0m\n'}
+[7.726662] (-) TimerEvent: {}
+[7.749197] (natnet_ros2) StdoutLine: {'line': b'[ 55%] Built target natnet_ros2__rosidl_typesupport_c\n'}
+[7.749396] (natnet_ros2) StdoutLine: {'line': b'[ 55%] Built target natnet_ros2__rosidl_typesupport_cpp\n'}
+[7.769279] (natnet_ros2) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libnatnet_ros2__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.826768] (-) TimerEvent: {}
+[7.828254] (natnet_ros2) StdoutLine: {'line': b'[ 58%] Built target natnet_ros2__rosidl_typesupport_introspection_c\n'}
+[7.858429] (natnet_ros2) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libnatnet_ros2__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[7.913198] (natnet_ros2) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libnatnet_ros2__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[7.921659] (natnet_ros2) StdoutLine: {'line': b'[ 63%] Built target natnet_ros2__rosidl_typesupport_introspection_cpp\n'}
+[7.926844] (-) TimerEvent: {}
+[7.932508] (natnet_ros2) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libnatnet_ros2__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[8.025075] (natnet_ros2) StdoutLine: {'line': b'[ 66%] Built target natnet_ros2__rosidl_typesupport_fastrtps_cpp\n'}
+[8.026943] (-) TimerEvent: {}
+[8.031025] (natnet_ros2) StdoutLine: {'line': b'[ 66%] Built target natnet_ros2__rosidl_typesupport_fastrtps_c\n'}
+[8.053901] (natnet_ros2) StdoutLine: {'line': b'[ 66%] Built target natnet_ros2\n'}
+[8.073015] (natnet_ros2) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/marker_poses_server.dir/src/marker_poses_server.cpp.o\x1b[0m\n'}
+[8.085174] (natnet_ros2) StdoutLine: {'line': b'[ 72%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[8.127054] (-) TimerEvent: {}
+[8.227323] (-) TimerEvent: {}
+[8.327619] (-) TimerEvent: {}
+[8.408531] (natnet_ros2) StdoutLine: {'line': b'[ 72%] Built target natnet_ros2__py\n'}
+[8.425143] (natnet_ros2) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/natnet_ros2__rosidl_generator_py.dir/rosidl_generator_py/natnet_ros2/srv/_marker_poses_s.c.o\x1b[0m\n'}
+[8.427729] (-) TimerEvent: {}
+[8.528103] (-) TimerEvent: {}
+[8.628489] (-) TimerEvent: {}
+[8.728923] (-) TimerEvent: {}
+[8.776902] (natnet_ros2) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/natnet_ros2/libnatnet_ros2__rosidl_generator_py.so\x1b[0m\n'}
+[8.829040] (-) TimerEvent: {}
+[8.838637] (natnet_ros2) StdoutLine: {'line': b'[ 77%] Built target natnet_ros2__rosidl_generator_py\n'}
+[8.853590] (natnet_ros2) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/natnet_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/natnet_ros2/_natnet_ros2_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[8.864425] (natnet_ros2) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/natnet_ros2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/natnet_ros2/_natnet_ros2_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[8.871023] (natnet_ros2) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/natnet_ros2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/natnet_ros2/_natnet_ros2_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[8.929157] (-) TimerEvent: {}
+[8.952346] (natnet_ros2) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/natnet_ros2/natnet_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[8.969576] (natnet_ros2) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/natnet_ros2/natnet_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[8.979506] (natnet_ros2) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/natnet_ros2/natnet_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[8.984152] (natnet_ros2) StdoutLine: {'line': b'[ 94%] Built target natnet_ros2__rosidl_typesupport_c__pyext\n'}
+[9.003122] (natnet_ros2) StdoutLine: {'line': b'[ 94%] Built target natnet_ros2__rosidl_typesupport_introspection_c__pyext\n'}
+[9.008064] (natnet_ros2) StdoutLine: {'line': b'[ 94%] Built target natnet_ros2__rosidl_typesupport_fastrtps_c__pyext\n'}
+[9.029257] (-) TimerEvent: {}
+[9.129662] (-) TimerEvent: {}
+[9.230163] (-) TimerEvent: {}
+[9.330678] (-) TimerEvent: {}
+[9.431172] (-) TimerEvent: {}
+[9.531671] (-) TimerEvent: {}
+[9.632169] (-) TimerEvent: {}
+[9.732671] (-) TimerEvent: {}
+[9.833165] (-) TimerEvent: {}
+[9.933670] (-) TimerEvent: {}
+[10.034165] (-) TimerEvent: {}
+[10.134682] (-) TimerEvent: {}
+[10.235181] (-) TimerEvent: {}
+[10.268471] (natnet_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/droneops/ros2_ws/src/natnet_ros2/src/natnet_ros2.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid NatNetNode::get_node_params()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.268836] (natnet_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/droneops/ros2_ws/src/natnet_ros2/src/natnet_ros2.cpp:71:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kconverting to \xe2\x80\x98\x1b[01m\x1b[Kconst ParameterDescriptor\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} from initializer list would use explicit constructor \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::ParameterDescriptor_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.269013] (natnet_ros2) StderrLine: {'line': b'   71 |         \x1b[01;35m\x1b[Kdeclare_parameter<std::vector<std::string>>("object_names", {})\x1b[m\x1b[K;\n'}
+[10.269153] (natnet_ros2) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.269290] (natnet_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/droneops/ros2_ws/src/natnet_ros2/src/natnet_ros2.cpp:71:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin C++11 and above a default constructor can be explicit\n'}
+[10.335377] (-) TimerEvent: {}
+[10.435816] (-) TimerEvent: {}
+[10.536294] (-) TimerEvent: {}
+[10.636733] (-) TimerEvent: {}
+[10.737201] (-) TimerEvent: {}
+[10.837677] (-) TimerEvent: {}
+[10.938156] (-) TimerEvent: {}
+[11.038602] (-) TimerEvent: {}
+[11.138988] (-) TimerEvent: {}
+[11.145913] (natnet_ros2) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable marker_poses_server\x1b[0m\n'}
+[11.239129] (-) TimerEvent: {}
+[11.339629] (-) TimerEvent: {}
+[11.440118] (-) TimerEvent: {}
+[11.540631] (-) TimerEvent: {}
+[11.641070] (-) TimerEvent: {}
+[11.667971] (natnet_ros2) StdoutLine: {'line': b'[ 97%] Built target marker_poses_server\n'}
+[11.741226] (-) TimerEvent: {}
+[11.841640] (-) TimerEvent: {}
+[11.942134] (-) TimerEvent: {}
+[12.042635] (-) TimerEvent: {}
+[12.143107] (-) TimerEvent: {}
+[12.243613] (-) TimerEvent: {}
+[12.344090] (-) TimerEvent: {}
+[12.444558] (-) TimerEvent: {}
+[12.545042] (-) TimerEvent: {}
+[12.645529] (-) TimerEvent: {}
+[12.746018] (-) TimerEvent: {}
+[12.846404] (-) TimerEvent: {}
+[12.946809] (-) TimerEvent: {}
+[13.047241] (-) TimerEvent: {}
+[13.147661] (-) TimerEvent: {}
+[13.248129] (-) TimerEvent: {}
+[13.348519] (-) TimerEvent: {}
+[13.448838] (-) TimerEvent: {}
+[13.549186] (-) TimerEvent: {}
+[13.549438] (natnet_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable natnet_ros2_node\x1b[0m\n'}
+[13.649304] (-) TimerEvent: {}
+[13.749646] (-) TimerEvent: {}
+[13.849962] (-) TimerEvent: {}
+[13.866683] (natnet_ros2) StdoutLine: {'line': b'[100%] Built target natnet_ros2_node\n'}
+[13.882492] (natnet_ros2) CommandEnded: {'returncode': 0}
+[13.883657] (natnet_ros2) JobProgress: {'identifier': 'natnet_ros2', 'progress': 'install'}
+[13.900209] (natnet_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/droneops/ros2_ws/build/natnet_ros2'], 'cwd': '/home/droneops/ros2_ws/build/natnet_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'droneops'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/droneops'), ('OLDPWD', '/home/droneops/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1867'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/droneops/droneops/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'droneops'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'droneops'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/droneops/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/droneops-WorkStation:@/tmp/.ICE-unix/1688,unix/droneops-WorkStation:/tmp/.ICE-unix/1688'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4059d937_1854_492b_8d55_9b2bee7293b9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.49BNB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/droneops/droneops/install/bridge_optitrack:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/droneops/ros2_ws/build/natnet_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/droneops/droneops/install/bridge_optitrack/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/droneops/droneops/install/bridge_optitrack:/opt/ros/humble')]), 'shell': False}
+[13.909898] (natnet_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.910708] (natnet_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[13.911055] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/ament_index/resource_index/rosidl_interfaces/natnet_ros2\n'}
+[13.927860] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/msg/rosidl_generator_c__visibility_control.h\n'}
+[13.939018] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__functions.h\n'}
+[13.949742] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__struct.h\n'}
+[13.950027] (-) TimerEvent: {}
+[13.960428] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__type_support.h\n'}
+[13.971296] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/marker_poses.h\n'}
+[13.979462] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/library_path.sh\n'}
+[13.993395] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/library_path.dsv\n'}
+[14.009315] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[14.018616] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__rosidl_typesupport_fastrtps_c.h\n'}
+[14.026317] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[14.033478] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__builder.hpp\n'}
+[14.040098] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__struct.hpp\n'}
+[14.047178] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__traits.hpp\n'}
+[14.050184] (-) TimerEvent: {}
+[14.053364] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__type_support.hpp\n'}
+[14.059499] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/marker_poses.hpp\n'}
+[14.067194] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[14.073639] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.080418] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[14.093104] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__rosidl_typesupport_introspection_c.h\n'}
+[14.106619] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.120123] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/pythonpath.sh\n'}
+[14.131387] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/pythonpath.dsv\n'}
+[14.142342] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[14.150291] (-) TimerEvent: {}
+[14.153303] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[14.164788] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[14.171802] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[14.179740] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/__init__.py\n'}
+[14.186883] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/_natnet_ros2_s.ep.rosidl_typesupport_c.c\n'}
+[14.200174] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/_natnet_ros2_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[14.210266] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/_natnet_ros2_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[14.218645] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/libnatnet_ros2__rosidl_generator_py.so\n'}
+[14.228242] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/natnet_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.238926] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/natnet_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.250395] (-) TimerEvent: {}
+[14.251277] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/natnet_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.263293] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/srv/__init__.py\n'}
+[14.272140] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/srv/_marker_poses.py\n'}
+[14.281093] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/srv/_marker_poses_s.c\n'}
+[14.290676] (natnet_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/natnet_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.291400] (natnet_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/natnet_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.292242] (natnet_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/natnet_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.292814] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/srv/MarkerPoses.idl\n'}
+[14.303125] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/srv/MarkerPoses.srv\n'}
+[14.312173] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/srv/MarkerPoses_Request.msg\n'}
+[14.324466] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/srv/MarkerPoses_Response.msg\n'}
+[14.335751] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2.hpp\n'}
+[14.344229] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/nn_filter.hpp\n'}
+[14.350480] (-) TimerEvent: {}
+[14.355026] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/object_data.hpp\n'}
+[14.372228] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/launch/gui_natnet_ros2.launch.py\n'}
+[14.384356] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/launch/natnet_ros2.launch.py\n'}
+[14.394153] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/config/conf_autogen.yaml\n'}
+[14.402570] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/config/initiate.yaml\n'}
+[14.411502] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/ui/helper.ui\n'}
+[14.419451] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/ui/logo.png\n'}
+[14.426742] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/ui/ros-logo.png\n'}
+[14.433657] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/lib/natnet_ros2/natnet_ros2_node\n'}
+[14.440479] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/bin/natnet_ros2_node\n'}
+[14.447321] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/lib/natnet_ros2/marker_poses_server\n'}
+[14.450611] (-) TimerEvent: {}
+[14.454044] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/bin/marker_poses_server\n'}
+[14.460957] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[14.467186] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[14.473377] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[14.480023] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[14.487714] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py/__init__.py\n'}
+[14.494092] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py/node_module.py\n'}
+[14.500529] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/lib/natnet_ros2/helper_node_r2.py\n'}
+[14.507220] (natnet_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2.hpp\n'}
+[14.507605] (natnet_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/nn_filter.hpp\n'}
+[14.507784] (natnet_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/object_data.hpp\n'}
+[14.508430] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/ament_index/resource_index/package_run_dependencies/natnet_ros2\n'}
+[14.514896] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/ament_index/resource_index/parent_prefix_path/natnet_ros2\n'}
+[14.521348] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/ament_prefix_path.sh\n'}
+[14.528075] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/ament_prefix_path.dsv\n'}
+[14.535576] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/path.sh\n'}
+[14.542880] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/path.dsv\n'}
+[14.550406] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/local_setup.bash\n'}
+[14.550746] (-) TimerEvent: {}
+[14.558010] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/local_setup.sh\n'}
+[14.566515] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/local_setup.zsh\n'}
+[14.574643] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/local_setup.dsv\n'}
+[14.582870] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/package.dsv\n'}
+[14.599751] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/ament_index/resource_index/packages/natnet_ros2\n'}
+[14.611354] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/rosidl_cmake-extras.cmake\n'}
+[14.620314] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.628316] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.636513] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.644266] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[14.650828] (-) TimerEvent: {}
+[14.651377] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[14.668799] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[14.680423] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2Config.cmake\n'}
+[14.690414] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2Config-version.cmake\n'}
+[14.698848] (natnet_ros2) StdoutLine: {'line': b'-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/package.xml\n'}
+[14.705620] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_generator_c.so\n'}
+[14.706404] (natnet_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_generator_c.so" to ""\n'}
+[14.706847] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_fastrtps_c.so\n'}
+[14.707609] (natnet_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[14.708039] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_fastrtps_cpp.so\n'}
+[14.708761] (natnet_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[14.709118] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_introspection_c.so\n'}
+[14.709794] (natnet_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.710139] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_c.so\n'}
+[14.710771] (natnet_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_c.so" to ""\n'}
+[14.711116] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_introspection_cpp.so\n'}
+[14.711887] (natnet_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[14.712257] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_cpp.so\n'}
+[14.712889] (natnet_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_cpp.so" to ""\n'}
+[14.751032] (-) TimerEvent: {}
+[14.799060] (natnet_ros2) StdoutLine: {'line': b"Listing '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2'...\n"}
+[14.799390] (natnet_ros2) StdoutLine: {'line': b"Compiling '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/__init__.py'...\n"}
+[14.799552] (natnet_ros2) StdoutLine: {'line': b"Listing '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/srv'...\n"}
+[14.799719] (natnet_ros2) StdoutLine: {'line': b"Compiling '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/srv/__init__.py'...\n"}
+[14.799861] (natnet_ros2) StdoutLine: {'line': b"Compiling '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/srv/_marker_poses.py'...\n"}
+[14.805490] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_generator_py.so\n'}
+[14.806396] (natnet_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_generator_py.so" to ""\n'}
+[14.850124] (natnet_ros2) StdoutLine: {'line': b"Listing '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py'...\n"}
+[14.850467] (natnet_ros2) StdoutLine: {'line': b"Compiling '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py/__init__.py'...\n"}
+[14.850685] (natnet_ros2) StdoutLine: {'line': b"Compiling '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py/node_module.py'...\n"}
+[14.851151] (-) TimerEvent: {}
+[14.854958] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_generator_cExport.cmake\n'}
+[14.855313] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_generator_cExport-noconfig.cmake\n'}
+[14.855541] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[14.855824] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[14.856101] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_generator_cppExport.cmake\n'}
+[14.856445] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[14.856922] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[14.857302] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_introspection_cExport.cmake\n'}
+[14.857733] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[14.858187] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_cExport.cmake\n'}
+[14.858607] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[14.859070] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[14.859484] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[14.859927] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_cppExport.cmake\n'}
+[14.860333] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[14.860784] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_generator_pyExport.cmake\n'}
+[14.861193] (natnet_ros2) StdoutLine: {'line': b'-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_generator_pyExport-noconfig.cmake\n'}
+[14.865532] (natnet_ros2) CommandEnded: {'returncode': 0}
+[14.951630] (-) TimerEvent: {}
+[14.997924] (natnet_ros2) JobEnded: {'identifier': 'natnet_ros2', 'rc': 0}
+[14.999307] (-) EventReactorShutdown: {}

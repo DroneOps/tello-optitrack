@@ -1,0 +1,3 @@
+[console_scripts]
+cinematic_control = tello_control.cinematic_control:main
+

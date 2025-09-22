@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "natnet_ros2__py",
+		"source" : "/home/droneops/ros2_ws/build/natnet_ros2/natnet_ros2__py"
+	}
+}

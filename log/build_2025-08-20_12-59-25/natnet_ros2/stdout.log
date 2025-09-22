@@ -1,0 +1,263 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclcpp_lifecycle: 16.0.14 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Found ament_cmake_copyright: 0.12.14 (/opt/ros/humble/share/ament_cmake_copyright/cmake)
+-- Found ament_cmake_cppcheck: 0.12.14 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+-- Found ament_cmake_cpplint: 0.12.14 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+-- Found ament_cmake_lint_cmake: 0.12.14 (/opt/ros/humble/share/ament_cmake_lint_cmake/cmake)
+-- Found ament_cmake_xmllint: 0.12.14 (/opt/ros/humble/share/ament_cmake_xmllint/cmake)
+-- Found ament_cmake_uncrustify: 0.12.14 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/droneops/ros2_ws/build/natnet_ros2
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  8%] [32mBuilding CXX object CMakeFiles/natnet_ros2_node.dir/src/nn_filter.cpp.o[0m
+[  8%] Built target ament_cmake_python_symlink_natnet_ros2
+[ 11%] [32mBuilding CXX object CMakeFiles/natnet_ros2_node.dir/src/natnet_ros2.cpp.o[0m
+[ 11%] Built target ament_cmake_python_symlink_natnet_ros2_py
+running egg_info
+running egg_info
+creating natnet_ros2.egg-info
+creating natnet_ros2_py.egg-info
+writing natnet_ros2.egg-info/PKG-INFO
+writing natnet_ros2_py.egg-info/PKG-INFO
+writing dependency_links to natnet_ros2.egg-info/dependency_links.txt
+writing top-level names to natnet_ros2.egg-info/top_level.txt
+writing dependency_links to natnet_ros2_py.egg-info/dependency_links.txt
+writing manifest file 'natnet_ros2.egg-info/SOURCES.txt'
+writing top-level names to natnet_ros2_py.egg-info/top_level.txt
+writing manifest file 'natnet_ros2_py.egg-info/SOURCES.txt'
+reading manifest file 'natnet_ros2.egg-info/SOURCES.txt'
+writing manifest file 'natnet_ros2.egg-info/SOURCES.txt'
+reading manifest file 'natnet_ros2_py.egg-info/SOURCES.txt'
+writing manifest file 'natnet_ros2_py.egg-info/SOURCES.txt'
+[ 11%] Built target natnet_ros2__cpp
+[ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 19%] Built target ament_cmake_python_build_natnet_ros2_egg
+[ 22%] [32mBuilding C object CMakeFiles/natnet_ros2__rosidl_generator_c.dir/rosidl_generator_c/natnet_ros2/srv/detail/marker_poses__functions.c.o[0m
+[ 22%] Built target ament_cmake_python_build_natnet_ros2_py_egg
+[ 25%] [32mBuilding CXX object CMakeFiles/natnet_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/natnet_ros2/srv/detail/marker_poses__type_support.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/natnet_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/natnet_ros2/srv/detail/dds_fastrtps/marker_poses__type_support.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/natnet_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/natnet_ros2/srv/marker_poses__type_support.cpp.o[0m
+[ 33%] [32m[1mLinking C shared library libnatnet_ros2__rosidl_generator_c.so[0m
+[ 33%] Built target natnet_ros2__rosidl_generator_c
+[ 38%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 38%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 41%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/natnet_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/natnet_ros2/srv/marker_poses__type_support.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/natnet_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/natnet_ros2/srv/detail/marker_poses__type_support_c.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library libnatnet_ros2__rosidl_typesupport_c.so[0m
+[ 52%] [32m[1mLinking CXX shared library libnatnet_ros2__rosidl_typesupport_cpp.so[0m
+[ 55%] [32mBuilding C object CMakeFiles/natnet_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/natnet_ros2/srv/detail/marker_poses__type_support.c.o[0m
+[ 55%] Built target natnet_ros2__rosidl_typesupport_c
+[ 55%] Built target natnet_ros2__rosidl_typesupport_cpp
+[ 58%] [32m[1mLinking C shared library libnatnet_ros2__rosidl_typesupport_introspection_c.so[0m
+[ 58%] Built target natnet_ros2__rosidl_typesupport_introspection_c
+[ 61%] [32m[1mLinking CXX shared library libnatnet_ros2__rosidl_typesupport_introspection_cpp.so[0m
+[ 63%] [32m[1mLinking CXX shared library libnatnet_ros2__rosidl_typesupport_fastrtps_c.so[0m
+[ 63%] Built target natnet_ros2__rosidl_typesupport_introspection_cpp
+[ 66%] [32m[1mLinking CXX shared library libnatnet_ros2__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 66%] Built target natnet_ros2__rosidl_typesupport_fastrtps_cpp
+[ 66%] Built target natnet_ros2__rosidl_typesupport_fastrtps_c
+[ 66%] Built target natnet_ros2
+[ 69%] [32mBuilding CXX object CMakeFiles/marker_poses_server.dir/src/marker_poses_server.cpp.o[0m
+[ 72%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 72%] Built target natnet_ros2__py
+[ 75%] [32mBuilding C object CMakeFiles/natnet_ros2__rosidl_generator_py.dir/rosidl_generator_py/natnet_ros2/srv/_marker_poses_s.c.o[0m
+[ 77%] [32m[1mLinking C shared library rosidl_generator_py/natnet_ros2/libnatnet_ros2__rosidl_generator_py.so[0m
+[ 77%] Built target natnet_ros2__rosidl_generator_py
+[ 80%] [32mBuilding C object CMakeFiles/natnet_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/natnet_ros2/_natnet_ros2_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 83%] [32mBuilding C object CMakeFiles/natnet_ros2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/natnet_ros2/_natnet_ros2_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/natnet_ros2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/natnet_ros2/_natnet_ros2_s.ep.rosidl_typesupport_c.c.o[0m
+[ 88%] [32m[1mLinking C shared library rosidl_generator_py/natnet_ros2/natnet_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 91%] [32m[1mLinking C shared library rosidl_generator_py/natnet_ros2/natnet_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 94%] [32m[1mLinking C shared library rosidl_generator_py/natnet_ros2/natnet_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 94%] Built target natnet_ros2__rosidl_typesupport_c__pyext
+[ 94%] Built target natnet_ros2__rosidl_typesupport_introspection_c__pyext
+[ 94%] Built target natnet_ros2__rosidl_typesupport_fastrtps_c__pyext
+[ 97%] [32m[1mLinking CXX executable marker_poses_server[0m
+[ 97%] Built target marker_poses_server
+[100%] [32m[1mLinking CXX executable natnet_ros2_node[0m
+[100%] Built target natnet_ros2_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/ament_index/resource_index/rosidl_interfaces/natnet_ros2
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__functions.h
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__struct.h
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__type_support.h
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/marker_poses.h
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/library_path.sh
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/library_path.dsv
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__builder.hpp
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__struct.hpp
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__traits.hpp
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__type_support.hpp
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/marker_poses.hpp
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2/srv/detail/marker_poses__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/pythonpath.sh
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/pythonpath.dsv
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2-1.0.0-py3.10.egg-info/PKG-INFO
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2-1.0.0-py3.10.egg-info/SOURCES.txt
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2-1.0.0-py3.10.egg-info/dependency_links.txt
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2-1.0.0-py3.10.egg-info/top_level.txt
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/__init__.py
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/_natnet_ros2_s.ep.rosidl_typesupport_c.c
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/_natnet_ros2_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/_natnet_ros2_s.ep.rosidl_typesupport_introspection_c.c
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/libnatnet_ros2__rosidl_generator_py.so
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/natnet_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/natnet_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/natnet_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/srv/__init__.py
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/srv/_marker_poses.py
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/srv/_marker_poses_s.c
+-- Up-to-date symlink: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/natnet_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/natnet_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/natnet_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/srv/MarkerPoses.idl
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/srv/MarkerPoses.srv
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/srv/MarkerPoses_Request.msg
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/srv/MarkerPoses_Response.msg
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2.hpp
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/nn_filter.hpp
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/object_data.hpp
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/launch/gui_natnet_ros2.launch.py
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/launch/natnet_ros2.launch.py
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/config/conf_autogen.yaml
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/config/initiate.yaml
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/ui/helper.ui
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/ui/logo.png
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/ui/ros-logo.png
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/lib/natnet_ros2/natnet_ros2_node
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/bin/natnet_ros2_node
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/lib/natnet_ros2/marker_poses_server
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/bin/marker_poses_server
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py-1.0.0-py3.10.egg-info/PKG-INFO
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py-1.0.0-py3.10.egg-info/SOURCES.txt
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py-1.0.0-py3.10.egg-info/dependency_links.txt
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py-1.0.0-py3.10.egg-info/top_level.txt
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py/__init__.py
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py/node_module.py
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/lib/natnet_ros2/helper_node_r2.py
+-- Up-to-date symlink: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/natnet_ros2.hpp
+-- Up-to-date symlink: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/nn_filter.hpp
+-- Up-to-date symlink: /home/droneops/ros2_ws/install/natnet_ros2/include/natnet_ros2/object_data.hpp
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/ament_index/resource_index/package_run_dependencies/natnet_ros2
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/ament_index/resource_index/parent_prefix_path/natnet_ros2
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/ament_prefix_path.sh
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/ament_prefix_path.dsv
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/path.sh
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/environment/path.dsv
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/local_setup.bash
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/local_setup.sh
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/local_setup.zsh
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/local_setup.dsv
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/package.dsv
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/ament_index/resource_index/packages/natnet_ros2
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2Config.cmake
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2Config-version.cmake
+-- Symlinking: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/package.xml
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_generator_c.so
+-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_generator_c.so" to ""
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_c.so
+-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_c.so" to ""
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_typesupport_cpp.so" to ""
+Listing '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2'...
+Compiling '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/__init__.py'...
+Listing '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/srv'...
+Compiling '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/srv/__init__.py'...
+Compiling '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2/srv/_marker_poses.py'...
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_generator_py.so
+-- Set runtime path of "/home/droneops/ros2_ws/install/natnet_ros2/lib/libnatnet_ros2__rosidl_generator_py.so" to ""
+Listing '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py'...
+Compiling '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py/__init__.py'...
+Compiling '/home/droneops/ros2_ws/install/natnet_ros2/local/lib/python3.10/dist-packages/natnet_ros2_py/node_module.py'...
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_generator_cExport.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_generator_cppExport.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_cExport.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/natnet_ros2__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_generator_pyExport.cmake
+-- Installing: /home/droneops/ros2_ws/install/natnet_ros2/share/natnet_ros2/cmake/export_natnet_ros2__rosidl_generator_pyExport-noconfig.cmake

@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from natnet_ros2/srv/MarkerPoses.srv
+// generated code does not contain a copyright notice
+
+
+module natnet_ros2 {
+  module srv {
+    struct MarkerPoses_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct MarkerPoses_Response {
+      int64 num_of_markers;
+
+      sequence<double> x_position;
+
+      sequence<double> y_position;
+
+      sequence<double> z_position;
+    };
+  };
+};
