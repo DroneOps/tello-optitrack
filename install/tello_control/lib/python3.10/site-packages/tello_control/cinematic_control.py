@@ -1,140 +1,173 @@
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import PoseStamped, TwistStamped
+from geometry_msgs.msg import PoseStamped
 from djitellopy import Tello
 from scipy.spatial.transform import Rotation as R
 import numpy as np
+import signal
+import sys
 
 class CinematicControl(Node):
     def __init__(self):
         super().__init__('cinematic_control')
+        #flag
+        self.has_taken_off = False
 
-        # Publishers for logging
-        self.pose_pub = self.create_publisher(PoseStamped, '/drone/pose_log', 10)
-        self.vel_pub = self.create_publisher(TwistStamped, '/drone/vel_log', 10)
-
-        # Subscriber to OptiTrack data
+        #ros2 suscriber to optitrack data
         self.subscription = self.create_subscription(
-            PoseStamped, '/drone/pose', self.data_callback, 10
+            PoseStamped, '/drone/pose', #topic name from natnet_ros2 package
+            self.data_callback,
+            10
+        )
+        #suscriber to goal topic 
+        self.goal_sub = self.create_subscription(
+            PoseStamped, "/goal", self.goal_callback, 10
         )
 
-        # Connect to Tello
+        #connect to tello
         self.drone = Tello()
         self.drone.connect()
-        self.drone.takeoff()  # Takeoff
+        #wait until is connected
 
-        # Desired pose
-        self.Desired_x = -1.50
-        self.Desired_y = 2.60
-        self.Desired_z = -1.00
+        # Initialize velocities
+        self.InercialVel = np.zeros(3)
+        self.angularVel = 0
+        self.BodyVelocity = np.zeros(3)
 
-        # Control gain
-        self.Kp = 0.40
+        '''desired values and constant'''
+        self.Kp = 0.2
+        self.kp_z = 1
+    
+    def signal_handler(self, sig, frame):
+        print("\n[!] Ctrl+C detected. Landing..")
+        try:
+            self.drone.land()
+            self.drone.end()
+        except Exception as e:
+            print(f"Error to land: {e}")
+        rclpy.shutdown()
+        sys.exit(0)
 
+    def goal_callback(self, msg):
+        self.Desired_x = msg.pose.position.x
+        self.Desired_y = msg.pose.position.y
+        self.Desired_z = msg.pose.position.z
+        self.get_logger().info(f"New objective: ({self.Desired_x}, {self.Desired_y}, {self.Desired_z})")
+
+   
     def data_callback(self, msg):
-        # Get pose
+        #get pose
         self.Posex = msg.pose.position.x
         self.Posey = msg.pose.position.y
         self.Posez = msg.pose.position.z
 
-        # Get orientation
+        #get orientation in quaternion
         self.Qx = msg.pose.orientation.x
         self.Qy = msg.pose.orientation.y
         self.Qz = msg.pose.orientation.z
         self.Qw = msg.pose.orientation.w
 
-        # Show data
+        if not hasattr(self, 'Desired_x'):
+            return 
+
+        if not self.has_taken_off:
+            self.drone.takeoff()
+            self.has_taken_off = True
+            self.get_logger().info("Takeoff executed")
+        
+        
+        #show data
         self.get_logger().info(
             f"Pose: ({self.Posex:.3f}, {self.Posey:.3f}, {self.Posez:.3f}) "
             f"Quat: ({self.Qx:.3f}, {self.Qy:.3f}, {self.Qz:.3f}, {self.Qw:.3f})"
         )
 
-        # Control calculations
+        #calculate variables
         self.control_variables()
+        #calculate velocity
         self.calculateVelocities()
+        #send data after processing
         self.sendDataToTello()
+        #check if it is close enough to land 
         self.LandIfDesired()
 
-        # Publish pose
-        pose_msg = PoseStamped()
-        pose_msg.header.stamp = self.get_clock().now().to_msg()
-        pose_msg.header.frame_id = "world"
-        pose_msg.pose.position.x = self.Posex
-        pose_msg.pose.position.y = self.Posey
-        pose_msg.pose.position.z = self.Posez
-        pose_msg.pose.orientation.x = self.Qx
-        pose_msg.pose.orientation.y = self.Qy
-        pose_msg.pose.orientation.z = self.Qz
-        pose_msg.pose.orientation.w = self.Qw
-        self.pose_pub.publish(pose_msg)
-
-        # Publish velocity
-        vel_msg = TwistStamped()
-        vel_msg.header.stamp = self.get_clock().now().to_msg()
-        vel_msg.header.frame_id = "world"
-        vel_msg.twist.linear.x = self.BodyVelocity[0]
-        vel_msg.twist.linear.y = self.BodyVelocity[1]
-        vel_msg.twist.linear.z = self.BodyVelocity[2]
-        vel_msg.twist.angular.z = self.angularVel
-        self.vel_pub.publish(vel_msg)
-
+    '''control variables'''
     def control_variables(self):
         # Convert quaternion to Euler angles
-        self.roll, self.pitch, self.yaw = R.from_quat(
-            [self.Qx, self.Qy, self.Qz, self.Qw]
-        ).as_euler('xyz', degrees=False)
+        self.roll, self.pitch, self.yaw = R.from_quat([self.Qx, self.Qy, self.Qz, self.Qw]).as_euler('xyz', degrees=False)
 
-        # Current and desired positions
-        self.P = np.array([self.Posex, self.Posey, self.Posez])
-        self.desired_P = np.array([self.Desired_x, self.Desired_y, self.Desired_z])
-
-        # Inverse rotation for body frame
-        self.Re_inv = np.array([
-            [np.cos(self.yaw), np.sin(self.yaw), 0],
-            [-np.sin(self.yaw), np.cos(self.yaw), 0],
-            [0, 0, 1]
+        #convert to matrix
+        self.P = np.array([
+            self.Posex,
+            self.Posey,
+            self.Posez
+        ])
+        
+        #desired Matrix
+        self.desired_P = np.array([
+            self.Desired_x,
+            self.Desired_y,
+            self.Desired_z
         ])
 
-        # Position error
-        self.Pe = self.P - self.desired_P
+         #inverse rotation matrix
+        self.Re_inv = np.array([
+            [np.cos(self.yaw), np.sin(self.yaw), 0],
+            [-np.sin(self.yaw),  np.cos(self.yaw), 0],
+            [0,                0,               1]
+        ])
 
-        # Yaw error
-        self.Desired_yaw = 0
-        self.Yaw_error = self.yaw - self.Desired_yaw
-        if self.Yaw_error > np.pi:
-            self.Yaw_error -= 2 * np.pi
-        elif self.Yaw_error < -np.pi:
-            self.Yaw_error += 2 * np.pi
+        #calculate error
+        self.Pe = self.P - self.desired_P 
+       
 
+    '''calculate inercial velocity'''
     def calculateVelocities(self):
-        self.InercialVel = -self.Kp * self.Pe
-        self.angularVel = -self.Kp * self.Yaw_error
+        
+        self.InercialVel = np.array([
+        -self.Kp * self.Pe[0],
+        -self.Kp * self.Pe[1],
+        -self.kp_z * self.Pe[2]
+        ])
+
         self.BodyVelocity = self.Re_inv @ self.InercialVel
-
+    
+    '''send data to tello overwriting the rc'''
     def sendDataToTello(self):
-        linear_scale = 100.0
-        angular_scale = 57.3
+        self.get_logger().info(
+        f"Pe: {self.Pe}, InercialVel: {self.InercialVel}, BodyVel: {self.BodyVelocity}"
+        )
 
-        vx = int(np.clip(self.BodyVelocity[0] * linear_scale, -100, 100))
-        vy = int(np.clip(self.BodyVelocity[1] * linear_scale, -100, 100))
-        vz = int(np.clip(self.BodyVelocity[2] * linear_scale, -100, 100))
-        Yv = int(np.clip(self.angularVel * angular_scale, -100, 100))
+        scale = 20
+        vx = int(np.clip(self.BodyVelocity[0]*scale, -100, 100))
+        vy = int(np.clip(self.BodyVelocity[1]*scale, -100, 100))
+        vz = int(np.clip(self.BodyVelocity[2]*scale, -100, 100))
+        self.drone.send_rc_control(vx, vy, vz, self.angularVel) 
 
-        self.drone.send_rc_control(lr=vy, fb=vx, ud=vz, yaw=Yv)
 
     def LandIfDesired(self):
-        tol = 0.20
-        if (abs(self.Pe[0]) < tol and abs(self.Pe[1]) < tol and abs(self.Pe[2]) < tol):
-            self.get_logger().info("Landing...")
+        tol_ratio = 0.90 # Land the drone once it has reached at least precision_threshold (82%) of the target position.
+        x_ok = abs(self.P[0] - self.Desired_x) <= (1 - tol_ratio) * abs(self.Desired_x) or self.Desired_x == 0
+        y_ok = abs(self.P[1] - self.Desired_y) <= (1 - tol_ratio) * abs(self.Desired_y) or self.Desired_y == 0
+        z_ok = abs(self.P[2] - self.Desired_z) <= (1 - tol_ratio) * abs(self.Desired_z) or self.Desired_z == 0
+
+
+        if x_ok and y_ok and z_ok:
+            self.get_logger().warn(f"Close enough (~90%). Landing...")
             self.drone.land()
+            self.has_taken_off = False
 
 def main(args=None):
     rclpy.init(args=args)
     node = CinematicControl()
+
+    # Register signal
+    signal.signal(signal.SIGINT, lambda sig, frame: node.signal_handler(sig, frame))
+
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
 
-if __name__ == '__main__':
-    main()
 
+if __name__== '__main__':
+    main()
