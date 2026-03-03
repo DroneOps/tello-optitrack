@@ -1,4 +1,0 @@
-[console_scripts]
-cinematic_control = tello_control.cinematic_control:main
-pose_plotter = tello_control.pose_plotter:main
-

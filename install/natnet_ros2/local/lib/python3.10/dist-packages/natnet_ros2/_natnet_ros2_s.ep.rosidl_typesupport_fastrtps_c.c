@@ -1,1 +1,0 @@
-/home/droneops/ros2_ws/build/natnet_ros2/rosidl_generator_py/natnet_ros2/_natnet_ros2_s.ep.rosidl_typesupport_fastrtps_c.c

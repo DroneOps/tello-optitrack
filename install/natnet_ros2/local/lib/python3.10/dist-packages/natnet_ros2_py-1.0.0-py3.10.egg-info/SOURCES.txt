@@ -1,1 +1,0 @@
-/home/droneops/ros2_ws/build/natnet_ros2/ament_cmake_python/natnet_ros2_py/natnet_ros2_py.egg-info/SOURCES.txt

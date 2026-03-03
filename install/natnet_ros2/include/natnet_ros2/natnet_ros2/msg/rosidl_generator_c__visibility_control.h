@@ -1,1 +1,0 @@
-/home/droneops/ros2_ws/build/natnet_ros2/rosidl_generator_c/natnet_ros2/msg/rosidl_generator_c__visibility_control.h

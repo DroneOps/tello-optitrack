@@ -1,4 +1,0 @@
-srv/MarkerPoses.idl
-srv/MarkerPoses.srv
-srv/MarkerPoses_Request.msg
-srv/MarkerPoses_Response.msg

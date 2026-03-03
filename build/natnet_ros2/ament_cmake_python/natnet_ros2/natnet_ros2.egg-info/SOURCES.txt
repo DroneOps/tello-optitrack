@@ -1,8 +1,0 @@
-setup.py
-natnet_ros2/__init__.py
-natnet_ros2.egg-info/PKG-INFO
-natnet_ros2.egg-info/SOURCES.txt
-natnet_ros2.egg-info/dependency_links.txt
-natnet_ros2.egg-info/top_level.txt
-natnet_ros2/srv/__init__.py
-natnet_ros2/srv/_marker_poses.py

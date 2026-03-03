@@ -1,1 +1,0 @@
-/home/droneops/ros2_ws/src/natnet_ros2/include/natnet_ros2/object_data.hpp

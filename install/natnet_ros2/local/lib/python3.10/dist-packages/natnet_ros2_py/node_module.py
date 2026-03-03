@@ -1,1 +1,0 @@
-/home/droneops/ros2_ws/src/natnet_ros2/natnet_ros2_py/node_module.py

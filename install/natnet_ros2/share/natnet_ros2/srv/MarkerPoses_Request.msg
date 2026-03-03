@@ -1,1 +1,0 @@
-/home/droneops/ros2_ws/build/natnet_ros2/rosidl_cmake/srv/MarkerPoses_Request.msg

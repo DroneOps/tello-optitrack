@@ -1,1 +1,0 @@
-/home/droneops/ros2_ws/build/natnet_ros2/rosidl_generator_cpp/natnet_ros2/srv/detail/marker_poses__type_support.hpp

@@ -1,7 +1,0 @@
-setup.py
-natnet_ros2_py/__init__.py
-natnet_ros2_py/node_module.py
-natnet_ros2_py.egg-info/PKG-INFO
-natnet_ros2_py.egg-info/SOURCES.txt
-natnet_ros2_py.egg-info/dependency_links.txt
-natnet_ros2_py.egg-info/top_level.txt
