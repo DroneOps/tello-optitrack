@@ -5,9 +5,6 @@ from scipy.spatial.transform import Rotation as R
 import matplotlib.pyplot as plt # Library for plotting the data, we will use it to plot the trajectory of the drone and the desired position in 3D space. We will also use it to plot the x, y, z and yaw angles of the drone over time.
 from mpl_toolkits.mplot3d import Axes3D # Library for 3D plotting, we will use it to plot the trajectory of the drone in 3D space.
 import time
-import csv
-from datetime import datetime
-from pathlib import Path
 
 '''This script is used to plot the trajectory of the drone and the desired position in 3D space, as well as the x, y, z and yaw angles over time.
 The data is received from the /drone/pose topic, which is published by the natnet_ros2 package that receives the data from the OptiTrack motion capture system. 
@@ -28,15 +25,6 @@ class PosePlotter(Node):
         self.x, self.y, self.z, self.yaw, self.t = [], [], [], [], []
         self.start_time = time.time()
         self.get_logger().info('Ready to Plot.') #send a message to the console to indicate that the node is ready to receive data and plot it.
-        
-        # Initialize CSV file for data logging
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S") # Create a unique filename based on the current date and time
-        self.log_file_path = Path(__file__).parent.parent.parent / "notebooks" / f"pose_log_{timestamp}.csv"
-        self.log_file_path.parent.mkdir(exist_ok=True)
-        self.csv_file = open(self.log_file_path, 'w', newline='')
-        self.csv_writer = csv.writer(self.csv_file)
-        self.csv_writer.writerow(['time', 'x', 'y', 'z', 'yaw'])
-        self.csv_file.flush()
 
     def callback(self, msg):
         '''callback function to store the data from the optitrack system, it is called every time a new message is received from the /drone/pose topic.
@@ -58,10 +46,6 @@ class PosePlotter(Node):
 
         self.t.append(time.time() - self.start_time)
         
-        # Write data to CSV
-        self.csv_writer.writerow([self.t[-1], self.x[-1], self.y[-1], self.z[-1], yaw])
-        self.csv_file.flush()
-        
     def goal_callback(self, msg):
         #capture the desired position from the goal topic
         self.Desired_x = msg.pose.position.x
@@ -69,10 +53,6 @@ class PosePlotter(Node):
         self.Desired_z = msg.pose.position.z
 
     def plot(self):
-        # Close CSV file
-        self.csv_file.close()
-        self.get_logger().info(f"Data saved to {self.log_file_path}")
-        
         # ---- Figure 1: x, y, z, yaw vs time ----
         plt.figure(figsize=(10, 8))
         plt.subplot(4, 1, 1); plt.plot(self.t, self.x, label='x'); plt.grid(); plt.legend()

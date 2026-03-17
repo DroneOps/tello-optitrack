@@ -41,7 +41,7 @@ class CinematicControl(Node):
         self.BodyVelocity = np.zeros(3)
 
         '''desired values and constant'''
-        self.Kp = 0.2
+        self.Kp = 0.5
         self.kp_z = 1
     
     def signal_handler(self, sig, frame):
@@ -107,7 +107,7 @@ class CinematicControl(Node):
     '''control variables'''
     def control_variables(self):
         # Convert quaternion to Euler angles to get the yaw angle of the drone, which is needed for the control loop. 
-
+        self.roll, self.pitch, self.yaw = R.from_quat([self.Qx, self.Qy, self.Qz, self.Qw]).as_euler('xyz', degrees=False)
         #convert to matrix form for easier calculations
         self.P = np.array([
             self.Posex,
@@ -162,7 +162,7 @@ class CinematicControl(Node):
 
 
     def LandIfDesired(self):
-        tol_ratio = 0.90 # Land the drone once it has reached at least precision_threshold (90%) of the target position.
+        tol_ratio = 0.80 # Land the drone once it has reached at least precision_threshold (90%) of the target position.
         #this is done due to the fact that the drone may not be able to reach the exact position due to the control loop and the dynamics of the drone, so we allow it to land once it is close enough to the target position. 
         # This is a common practice in control systems to avoid oscillations around the target position and to ensure a smooth landing.
 
@@ -175,7 +175,7 @@ class CinematicControl(Node):
             f"Distance to target: x: {abs(self.P[0] - self.Desired_x):.3f}, y: {abs(self.P[1] - self.Desired_y):.3f}, z: {abs(self.P[2] - self.Desired_z):.3f}"
         )
         if x_ok and y_ok and z_ok:
-            self.get_logger().warn(f"Close enough (~90%). Landing...")
+            self.get_logger().warn(f"Close enough (~80%). Landing...")
             self.drone.land() #send land command to the drone
             self.has_taken_off = False #reset the flag to allow taking off again if a new goal is received after landing
 

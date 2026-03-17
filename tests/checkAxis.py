@@ -39,8 +39,8 @@ def mover_dron(vx=0, vy=0, vz=0, yaw=0, duracion=3):
 open("height.txt", "w").close()
 
 
-# 3 seconds of movement in the X axis (rising at 50 cm/s)
-mover_dron(vx=50, duracion=3)
+# 3 seconds of movement in the Z axis at a speed of 50 (the speed can be adjusted based on the desired test conditions)
+mover_dron(vz=50, duracion=3)
 
 
 tello.send_rc_control(0, 0, 0, 0)
